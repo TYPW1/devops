@@ -58,7 +58,7 @@ It only remains to make its configuration.
 
 by
 
-`external_url 'http://192.168.33.9/gitlab' `
+`external_url 'http://192.168.56.10/gitlab' `
 
 and
 
@@ -84,7 +84,7 @@ by
 
 3- Connect to GitLab
 
-Open `http://192.168.33.9/gitlab` in your browser.
+Open `http://192.168.56.10/gitlab` in your browser.
 
 You will be asked to provide a password (refered as $YOUR_PASSWORD later) for the root credentials.
 
