@@ -201,11 +201,11 @@ This is done by executing the following commands:
 2. Then enter the requested information as follows:
 
 For GitLab instance URL enter:<br>
-`http://192.168.33.9/gitlab/`
+`http://192.168.56.10/gitlab/`
 
 
 For the gitlab-ci token enter the generated token.<br>
-`Example: 85y84QhgbyaqWo38b7qg`
+`Example: oxUau7JWu9EraS1u8hw5`
 
 For a description for the runner enter:<br>
 `[integration-server] docker`
