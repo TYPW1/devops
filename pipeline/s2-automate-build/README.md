@@ -205,7 +205,7 @@ For GitLab instance URL enter:<br>
 
 
 For the gitlab-ci token enter the generated token.<br>
-`Example: oxUau7JWu9EraS1u8hw5`
+`Example: KsoMVn-QvyZyo6Xe7U-i`
 
 For a description for the runner enter:<br>
 `[integration-server] docker`
@@ -312,10 +312,3 @@ deploy_app:
  
 * 4.a Find out what is the result of this modification.<br>
 **Tip:** have a look on the CI/CD -> Pipelines of the project.
-
-
-
-
-
-
-   
