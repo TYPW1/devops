@@ -52,3 +52,12 @@
   shell: "usermod -aG docker {{ item }}"
   with_items:
     - vagrant
+
+- name: Add users to the docker group
+  user:
+    name: "{{ ansible_user }}"
+    groups: docker
+    append: yes
+  with_items:
+    - vagrant
+    # - other_user

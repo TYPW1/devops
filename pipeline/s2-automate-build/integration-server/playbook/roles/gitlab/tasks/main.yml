@@ -59,3 +59,23 @@
     name: "{{ gitlab_package_name | default(gitlab_edition) }}"
     state: present
   when: not gitlab_file.stat.exists
+
+- name: Set GitLab external URL
+  lineinfile:
+    path: /etc/gitlab/gitlab.rb
+    regexp: '^external_url'
+    line: "external_url 'http://192.168.56.10/gitlab'"
+
+- name: Set Unicorn port
+  lineinfile:
+    path: /etc/gitlab/gitlab.rb
+    regexp: '^unicorn\[''port''\]'
+    line: "unicorn['port'] = 8088"
+    state: present
+
+- name: Restart GitLab
+  command: "{{ item }}"
+  with_items:
+    - gitlab-ctl reconfigure
+    - gitlab-ctl restart unicorn
+    - gitlab-ctl restart

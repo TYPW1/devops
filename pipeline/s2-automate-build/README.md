@@ -230,9 +230,9 @@ For the Docker image (eg. ruby:2.1) enter:<br>
 
 **Exercise 2** 
 
-* 2.a Collect the manual steps you have done up to now. 
+* 2.a `Collect the manual steps you have done up to now. 
 * 2.b List those that could be added to a playbook.
-* 2.c Add (at least) half of them to either a new or existent playbook.
+* 2.c Add (at least) half of them to either a new or existent playbook.`
 
 
 
